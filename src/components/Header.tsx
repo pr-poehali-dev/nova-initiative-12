@@ -10,10 +10,10 @@ export const Header = () => {
         </a>
         <nav className="flex max-lg:hidden absolute left-1/2 -translate-x-1/2 items-center justify-center gap-x-10">
           {[
-            { label: "О нас", href: "#about" },
-            { label: "Портфолио", href: "#portfolio" },
-            { label: "Инсайты", href: "#insights" },
-            { label: "Контакты", href: "#contact" },
+            { label: "Новости", href: "#news" },
+            { label: "Состав", href: "#roster" },
+            { label: "Матчи", href: "#matches" },
+            { label: "Достижения", href: "#achievements" },
           ].map((item) => (
             <a
               className="uppercase inline-block font-mono text-foreground/60 hover:text-foreground/100 duration-150 transition-colors ease-out"
@@ -26,9 +26,9 @@ export const Header = () => {
         </nav>
         <a
           className="uppercase max-lg:hidden transition-colors ease-out duration-150 font-mono text-primary hover:text-primary/80"
-          href="#sign-in"
+          href="#roster"
         >
-          Войти
+          [NV]
         </a>
         <MobileMenu />
       </header>
